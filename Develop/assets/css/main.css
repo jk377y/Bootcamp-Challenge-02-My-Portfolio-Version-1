@@ -1,11 +1,319 @@
 * {
     font-family: "Gill Sans Extrabold", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.class {
-    
+body {
+    background-color: rgb(224, 224, 224);
 }
 
-#id {
-    
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(42, 106, 189);
+    height: 80px;
 }
+
+.h1 {
+    background-color: aquamarine;
+    display: inline;
+    width: 350px;
+    color: rgb(224, 224, 224);
+    text-align: left;
+    padding-left: 3px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 60px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+.nav {
+    display: inline;
+    position: relative;
+    top: 40px;
+    right: 15px;
+    text-align: right;
+    list-style-type: none;
+}
+
+.nav-links {
+    margin-left: 25px;
+    color: aquamarine;
+    display: inline;
+    align-items: baseline;
+    font-size: 20pt;
+}
+
+nav a:visited {
+    color: rgb(224, 224, 224);
+}
+
+
+.banner {
+    background-image: url(/Develop/assets/images/fence.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-pic {
+    background-image: url(/Develop/assets/images/james.png);
+    height: 300px;
+    width: 300px;
+}
+
+.h2-quote {
+    color:rgba(42, 106, 189, 0.938);
+    background-color: aquamarine;
+    display: flex;
+    position: relative; 
+    top: 250px;
+    right: 75px;
+    padding: 3px;
+}   
+
+.section-1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.about-me-div-1 {
+    position: relative;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    border-right: solid; 
+    border-width: 5px;
+    border-color: rgb(42, 106, 189, 0.938);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about-me {
+    text-align: right;
+    font-size: 50px;
+    height: 200px;
+    padding-right: 15px;
+    color:rgba(42, 106, 189, 0.938);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    font-size: 50px;
+}
+
+.about-me-div-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 200px;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-me-p1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 50%;
+    color:rgba(40, 76, 122, 0.938);
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.about-me-p2 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    color:rgba(40, 76, 122, 0.938);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.section-2 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(224, 224, 224);
+}
+
+.work-div-1 {
+    position: relative;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    border-right: solid; 
+    border-width: 5px;
+    border-color: rgb(42, 106, 189, 0.938);
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.work {
+    text-align: right;
+    font-size: 50px;
+    height: 200px;
+    padding-right: 15px;
+    color:rgba(42, 106, 189, 0.938);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    font-size: 50px;
+}
+
+.work-div-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    color:rgba(40, 76, 122, 0.938);
+    z-index: 1;
+    background-color: rgb(224, 224, 224);
+}
+
+.frame-1 {
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 100%%;
+    margin-bottom: 15px;
+    justify-content: space-between;  
+}
+
+.work-box-1 {
+    display: flex;
+    position: relative;
+    right: 0;
+    background-color: rgb(224, 224, 224);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 96%;
+    width: 100%;
+    border: 3px solid rgb(0, 255, 255)    
+}
+
+.frame-2-3 {
+    display: flex;
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    height: 115px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.work-box-2 {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 50%;
+    border: 3px solid rgb(0, 255, 255)
+}
+
+.work-box-3 {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 50%;
+    border: 3px solid rgb(0, 255, 255)
+}
+
+.frame-4-5 {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    background-color: rgb(224, 224, 224);
+    height: 115px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.work-box-4 {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 50%;
+    border: 3px solid rgb(0, 255, 255)
+}
+
+.work-box-5 {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 50%;
+    border: 3px solid rgb(0, 255, 255)
+}
+
+/*.side-div-1 {
+    width: 300px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: rgb(182, 182, 182);   
+    color:rgba(42, 106, 189, 0.938);
+    border-right: solid; 
+    border-width: 5px;
+    border-color: rgba(40, 76, 122, 0.938);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    font-size: 40px;
+}*/
+
+/*.side-div-2 {
+    padding-left: 10px;
+    padding-top: 10px;   
+}*/
+
+/*
+li.div-list {
+    display: inline;
+    list-style-type: none;
+    font-size: 24px;
+    text-decoration: underline;
+    
+}*/
+
+
+
+/*
+
+.section-3 {
+    background-color: rgb(182, 182, 182);
+}
+
+.blank-space {
+    height: 25px;
+    width: 100%;
+    background-color: rgba(182, 182, 182);
+}
+*/
+
+/*.work {
+    height: 500px;
+    width: 300px;
+    text-align: right;
+    padding-right: 15px;
+}
+}
+
+.contact-me {
+    height: 250px;
+    width: 300px;
+    text-align: right;
+    padding-right: 15px;
+}*/
