@@ -97,13 +97,13 @@ nav a:visited {
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-    font-size: 50px;
     text-align: right;
     padding-right: 15px;
 }
 
 .about-me {
     text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
     height: 200px;
     padding-right: 15px;
@@ -167,11 +167,12 @@ nav a:visited {
     border-right: solid; 
     border-width: 5px;
     border-color: rgba(42, 106, 189, 0.938);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-    font-size: 50px;
     text-align: right;
     padding-right: 15px;
 }
