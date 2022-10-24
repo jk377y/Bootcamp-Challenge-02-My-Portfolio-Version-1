@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
     background-color: rgb(224, 224, 224);
 }
@@ -16,13 +16,15 @@ header {
 }
 
 .h1 {
-    background-color: aquamarine;
+    background-color: rgb(11, 250, 250);
     display: inline;
-    width: 350px;
+    width: 25%;
     color: rgb(224, 224, 224);
-    text-align: left;
+    position: relative;
+    left: 0;
+    text-align: right;
     padding-left: 3px;
-    margin-left: 25px;
+    margin-left: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -69,7 +71,7 @@ nav a:visited {
 
 .h2-quote {
     color:rgba(42, 106, 189, 0.938);
-    background-color: aquamarine;
+    background-color: rgb(11, 250, 250);
     display: flex;
     position: relative; 
     top: 250px;
@@ -77,6 +79,7 @@ nav a:visited {
     padding: 3px;
 }   
 
+/* This is CSS for the About Me section */
 .section-1 {
     position: relative;
     width: 100%;
@@ -84,16 +87,19 @@ nav a:visited {
 }
 
 .about-me-div-1 {
-    position: relative;
-    left: 0;
-    width: 300px;
-    height: 200px;
-    z-index: 1;
+    height: 100%;
+    width: 20%;
+    color:rgba(42, 106, 189, 0.938);
     border-right: solid; 
     border-width: 5px;
-    border-color: rgb(42, 106, 189, 0.938);
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-color: rgba(42, 106, 189, 0.938);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 15px;
 }
 
 .about-me {
@@ -106,14 +112,13 @@ nav a:visited {
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-    font-size: 50px;
 }
 
 .about-me-div-2 {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 80%;
+    right: 10px;
+    width: 75%;
     height: 200px;
     z-index: 1;
     padding-left: 20px;
@@ -122,9 +127,10 @@ nav a:visited {
 
 .about-me-p1 {
     position: relative;
-    top: 0;
-    right: 0;
-    height: 50%;
+    top: 5;
+    left: 10px;
+    height: 40%;
+    width: 90%;
     color:rgba(40, 76, 122, 0.938);
     z-index: 1;
     overflow-x: hidden;
@@ -132,188 +138,103 @@ nav a:visited {
 
 .about-me-p2 {
     position: relative;
-    bottom: 0;
-    right: 0;
-    height: 50%;
+    bottom: 05;
+    left: 10px;
+    height: 40%;
+    width: 90%;
     color:rgba(40, 76, 122, 0.938);
     z-index: 1;
-    overflow: hidden;
+    overflow-x:  hidden;
 }
+
+.page-break {
+    height: 30px;
+}
+
+/* This is CC for the Work section */
 
 .section-2 {
     position: relative;
+    height: 630px;
     width: 100%;
-    height: 600px;
-    background-color: rgb(224, 224, 224);
 }
 
-.work-div-1 {
-    position: relative;
-    left: 0;
-    width: 20%;
+ 
+.side-box-work {
     height: 100%;
-    z-index: 1;
+    width: 20%;
+    color:rgba(42, 106, 189, 0.938);
     border-right: solid; 
     border-width: 5px;
-    border-color: rgb(42, 106, 189, 0.938);
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.work {
-    text-align: right;
-    font-size: 50px;
-    height: 200px;
-    padding-right: 15px;
-    color:rgba(42, 106, 189, 0.938);
+    border-color: rgba(42, 106, 189, 0.938);
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
     font-size: 50px;
-}
-
-.work-div-2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 80%;
-    color:rgba(40, 76, 122, 0.938);
-    z-index: 1;
-    background-color: rgb(224, 224, 224);
-}
-
-.frame-1 {
-    display: flex;
-    position: relative;
-    height: 300px;
-    width: 100%%;
-    margin-bottom: 15px;
-    justify-content: space-between;  
+    text-align: right;
+    padding-right: 15px;
 }
 
 .work-box-1 {
-    display: flex;
-    position: relative;
-    right: 0;
-    background-color: rgb(224, 224, 224);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 96%;
-    width: 100%;
-    border: 3px solid rgb(0, 255, 255)    
-}
+    background-color: rgb(87, 87, 87);
+    position: absolute;
+    top: 0;
+    left: 23%;
+    height: 44%;
+    width: 74%;
+    z-index: 1;
+    border: 3px solid rgb(0, 255, 255);
 
-.frame-2-3 {
-    display: flex;
-    position: relative;
-    background-color: rgb(224, 224, 224);
-    height: 115px;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .work-box-2 {
-    margin-left: 10px;
-    margin-right: 5px;
-    width: 50%;
-    border: 3px solid rgb(0, 255, 255)
+    background-color: rgb(231, 56, 56);
+    position: absolute;
+    top: 305px;
+    left: 23%;
+    z-index: 1;
+    width: 36%;
+    height: 135px;
+    border: 3px solid rgb(0, 255, 255);
 }
 
 .work-box-3 {
-    margin-left: 5px;
-    margin-right: 10px;
-    width: 50%;
-    border: 3px solid rgb(0, 255, 255)
-}
-
-.frame-4-5 {
-    display: flex;
-    position: relative;
-    bottom: 0;
-    background-color: rgb(224, 224, 224);
-    height: 115px;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    background-color: rgb(133, 26, 221);
+    position: absolute;
+    top: 305px;
+    left: 61%;
+    z-index: 1;
+    width: 36%;
+    height: 135px;
+    border: 3px solid rgb(0, 255, 255);
 }
 
 .work-box-4 {
-    margin-left: 10px;
-    margin-right: 5px;
-    width: 50%;
-    border: 3px solid rgb(0, 255, 255)
+    background-color: rgb(60, 151, 255);
+    position: absolute;
+    top: 465px;
+    left: 23%;
+    z-index: 1;
+    width: 36%;
+    height: 135px;
+    border: 3px solid rgb(0, 255, 255);
 }
 
 .work-box-5 {
-    margin-left: 5px;
-    margin-right: 10px;
-    width: 50%;
-    border: 3px solid rgb(0, 255, 255)
+    background-color: rgb(85, 202, 50);
+    position: absolute;
+    top: 465px;
+    left: 61%;
+    z-index: 1;
+    width: 36%;
+    height: 135px;
+    border: 3px solid rgb(0, 255, 255);
 }
 
-/*.side-div-1 {
-    width: 300px;
-    text-align: right;
-    padding-right: 10px;
-    background-color: rgb(182, 182, 182);   
-    color:rgba(42, 106, 189, 0.938);
-    border-right: solid; 
-    border-width: 5px;
-    border-color: rgba(40, 76, 122, 0.938);
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-    font-size: 40px;
-}*/
-
-/*.side-div-2 {
-    padding-left: 10px;
-    padding-top: 10px;   
-}*/
-
-/*
-li.div-list {
-    display: inline;
-    list-style-type: none;
-    font-size: 24px;
-    text-decoration: underline;
-    
-}*/
-
-
-
-/*
-
-.section-3 {
-    background-color: rgb(182, 182, 182);
-}
-
-.blank-space {
-    height: 25px;
+.img-box {
     width: 100%;
-    background-color: rgba(182, 182, 182);
-}
-*/
+    height: 100%;
+} 
 
-/*.work {
-    height: 500px;
-    width: 300px;
-    text-align: right;
-    padding-right: 15px;
-}
-}
-
-.contact-me {
-    height: 250px;
-    width: 300px;
-    text-align: right;
-    padding-right: 15px;
-}*/
+/* This is CSS for the Contact section */
