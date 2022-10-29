@@ -1,241 +1,220 @@
 * {
-    font-family: "Gill Sans Extrabold", sans-serif;
     margin: 0;
-    padding: 0;
 }
- 
+
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(217, 234, 251);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(42, 106, 189);
-    height: 80px;
-}
-
-.h1 {
-    background-color: rgb(11, 250, 250);
-    display: inline;
-    width: 25%;
-    color: rgb(224, 224, 224);
-    position: relative;
-    left: 0;
+H2 {
+    font-size: 48px;
+    color: var(--left-text);
     text-align: right;
-    padding-left: 3px;
-    margin-left: 0px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 60px;
-	text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+    padding-right: 10px;
 }
 
-.nav {
-    display: inline;
-    position: relative;
-    top: 40px;
-    right: 15px;
-    text-align: right;
-    list-style-type: none;
-}
-
-.nav-links {
-    margin-left: 25px;
-    color: aquamarine;
-    display: inline;
-    align-items: baseline;
-    font-size: 20pt;
-}
-
-nav a:visited {
-    color: rgb(224, 224, 224);
-}
-
-
-.banner {
-    background-image: url(/Develop/assets/images/fence.png);
-    display: flex;
-    justify-content: space-between;
-}
-
-#profile-pic {
-    background-image: url(/Develop/assets/images/james.png);
-    height: 300px;
-    width: 300px;
-}
-
-.h2-quote {
-    color:rgba(42, 106, 189, 0.938);
-    background-color: rgb(11, 250, 250);
-    display: flex;
-    position: relative; 
-    top: 250px;
-    right: 75px;
-    padding: 3px;
-}   
-
-/* This is CSS for the About Me section */
-.section-1 {
-    position: relative;
-    width: 100%;
-    height: 200px;
-}
-
-.about-me-div-1 {
-    height: 100%;
-    width: 20%;
-    color:rgba(42, 106, 189, 0.938);
-    border-right: solid; 
-    border-width: 5px;
-    border-color: rgba(42, 106, 189, 0.938);
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-    text-align: right;
-    padding-right: 15px;
-}
-
-.about-me {
-    text-align: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    height: 200px;
-    padding-right: 15px;
-    color:rgba(42, 106, 189, 0.938);
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-}
-
-.about-me-div-2 {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    width: 75%;
-    height: 200px;
-    z-index: 1;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.about-me-p1 {
-    position: relative;
-    top: 5;
-    left: 10px;
-    height: 40%;
-    width: 90%;
-    color:rgba(40, 76, 122, 0.938);
-    z-index: 1;
-    overflow-x: hidden;
-}
-
-.about-me-p2 {
-    position: relative;
-    bottom: 05;
-    left: 10px;
-    height: 40%;
-    width: 90%;
-    color:rgba(40, 76, 122, 0.938);
-    z-index: 1;
-    overflow-x:  hidden;
+:root {
+    --pic-border: 5px solid rgb(2, 208, 219);
+    --aqua-bg: rgb(2, 208, 219);
+    --alt-bg-color: orange;
+    --blue-border: 5px solid rgb(58, 72, 173);
+    --left-text: rgb(58, 72, 173); 
+    --red-hover: crimson;
 }
 
 .page-break {
-    height: 30px;
+    height: 20px;
 }
 
-/* This is CC for the Work section */
-
-.section-2 {
-    position: relative;
-    height: 630px;
-    width: 100%;
+.page-break1 {
+    height: 500vh;
 }
 
- 
-.side-box-work {
-    height: 100%;
-    width: 20%;
-    color:rgba(42, 106, 189, 0.938);
-    border-right: solid; 
-    border-width: 5px;
-    border-color: rgba(42, 106, 189, 0.938);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+.section1 {
+    display: grid;    
+    grid-template-rows: 150px;
+    grid-template-columns: 200px 90fr;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.about-me {
+    grid-column: 1 / 2;
+    color: var(--left-text);
+    border-right: var(--blue-border)
+}
+
+.about-me-para {
+    color: var(--left-text);
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding: 10px 20px 0px 30px;
+}
+
+.header {
+    display: grid;    
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 25fr 75fr;
+    background-image: url(../images/fence.png);
+    z-index: -1;
     text-align: right;
-    padding-right: 15px;
 }
 
-.work-box-1 {
-    background-color: rgb(87, 87, 87);
-    position: absolute;
-    top: 0;
-    left: 23%;
-    height: 44%;
-    width: 74%;
-    z-index: 1;
-    border: 3px solid rgb(0, 255, 255);
-
+.H1 {
+    display: inline;
+    grid-column: 1 / 2;
+    font-size: 48px;
+    background-color: var(--aqua-bg);
+    text-align: right;
 }
 
-.work-box-2 {
-    background-color: rgb(231, 56, 56);
-    position: absolute;
-    top: 305px;
-    left: 23%;
-    z-index: 1;
-    width: 36%;
-    height: 135px;
-    border: 3px solid rgb(0, 255, 255);
+.nav {
+    grid-column: 2 / 3; 
 }
 
-.work-box-3 {
-    background-color: rgb(133, 26, 221);
-    position: absolute;
-    top: 305px;
-    left: 61%;
-    z-index: 1;
-    width: 36%;
-    height: 135px;
-    border: 3px solid rgb(0, 255, 255);
+.nav-links {
+    display: inline-block;
+    min-width: 20px;
+    font-size: 24px;
+    list-style-type: none;
+    padding-top: 20px;
+    color: var(--aqua-bg);
+    margin-right: 50px;
 }
 
-.work-box-4 {
-    background-color: rgb(60, 151, 255);
-    position: absolute;
-    top: 465px;
-    left: 23%;
-    z-index: 1;
-    width: 36%;
-    height: 135px;
-    border: 3px solid rgb(0, 255, 255);
+nav a:visited {
+    color: var(--aqua-bg);
 }
 
-.work-box-5 {
-    background-color: rgb(85, 202, 50);
-    position: absolute;
-    top: 465px;
-    left: 61%;
-    z-index: 1;
-    width: 36%;
-    height: 135px;
-    border: 3px solid rgb(0, 255, 255);
+nav a:hover {
+    color: var(--red-hover);
 }
 
-.img-box {
-    width: 100%;
+.left-header {
+    text-align: left;
+}
+
+.profile-pic {
     height: 100%;
-} 
+}
 
-/* This is CSS for the Contact section */
+.h2-quote {
+    background-color: var(--aqua-bg);
+    color: black;
+}
+
+.quote {
+    position: relative;
+    top: 140px;
+}
+
+.section2 {
+    display: grid;
+    grid-template-rows: 500px 200px 200px;
+    grid-template-columns: 200px 40fr 40fr;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.work {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    color: var(--left-text);
+    border-right: var(--blue-border);
+}
+
+.pic1 {
+    grid-column: 2 / 4;
+    margin-left: 50px;
+}
+
+.pic2 {
+    grid-column: 2 / 3;
+    margin-left: 20px;
+}
+
+.pic3 {
+    grid-column: 3 / 4;
+    margin-left: 20px;
+}
+
+.pic4 {
+    grid-column: 2 / 3;
+    margin-left: 20px;
+}
+
+.pic5 {
+    grid-column: 3 / 4;
+    margin-left: 20px;
+}
+
+.fit-grid {
+    width: 95%;
+    height: 95%;
+    border: var(--pic-border);
+}
+
+.section3 {
+    display: grid;    
+    grid-template-rows: 150px;
+    grid-template-columns: 200px 90fr;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.contact {
+    grid-column: 1 / 2;
+    color: var(--left-text);
+    border-right: var(--blue-border)
+}
+
+.links {
+    text-align: center;
+    grid-column: 2 / 4;
+    color: var(--left-text);
+}
+
+.links-ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.links li {
+    display: inline-block;
+    min-width: 20px;
+    padding: 50px;
+    font-size: 36px;
+}
+
+.url a:visited {
+    color: var(--left-text);
+}
+
+.phone a:visited {
+    color: var(--left-text);
+}
+
+.links-ul a:hover {
+    color: var(--red-hover);
+}
+
+.pic-hover a:hover {
+    opacity: 0.7;
+}
+
+.overlay1 {
+    position: relative;
+    bottom: 70px;
+    background-color: var(--aqua-bg);
+    width: 180px;
+    padding-left: 10px;
+}
+
+.overlay2 {
+    font-size: 24px;
+}
+
+.overlay3 {
+    font-size: 16px;
+}
