@@ -199,8 +199,12 @@ nav a:hover {
     color: var(--red-hover);
 }
 
+.pic-hover a {
+    opacity: 0.8;
+}
+
 .pic-hover a:hover {
-    opacity: 0.7;
+    opacity: 1.0;
 }
 
 .overlay1 {
