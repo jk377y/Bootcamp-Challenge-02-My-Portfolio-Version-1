@@ -19,7 +19,7 @@ No steps required for installation.
 
 This page can be viewed at https://jk377y.github.io/Challenge-02/
 
-![a screen shot of my deployed page hosted on Git Pages](./develop/asses/images/challenge2-deployed.png)
+![a screen shot of my deployed page hosted on Git Pages](./Develop/assets/images/challenge2-deployed.PNG)
 
 ## Credits
 
