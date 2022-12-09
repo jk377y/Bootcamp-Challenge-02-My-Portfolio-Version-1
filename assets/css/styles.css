@@ -1,0 +1,120 @@
+/* =========== RESET CSS =========== */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: normal;
+}
+
+:root {
+    --whiteText: white;
+    --redText: red;
+    --blueText: blue;
+    --blackText: black;
+    --borderColor: rgba(5, 5, 5, 0.993);
+    --bgColor: tan;
+    --windowColor: rgba(28, 89, 221, 0.356);
+    --hover: rgb(0, 255, 0);
+}
+
+
+/* =========== Custom CSS =========== */
+
+body{
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    grid-template: 15fr 70fr 15fr / 12.5fr 12.5fr 12.5fr 12.5fr 12.5fr 12.5fr 12.5fr;
+    grid-template-areas:
+        "header header header header header header header"
+        "main   main   main   main   main   main   main"
+        "footer footer footer footer footer footer footer"
+        ;
+}
+.header {
+    background-color: var(--windowColor);
+    grid-area: header;
+    display: grid;
+    grid-template: 20fr 80fr / 20fr auto 40fr;
+    grid-template-areas:
+        "name blank quote"
+        "pic  blank links"
+        ;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.name {
+    grid-area: name;
+    text-align: left;
+    padding-left: 10px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--whiteText);
+}
+.pic {
+    grid-area: pic;
+    background-size: cover;
+}
+.quote {
+    grid-area: quote;
+    text-align: right;
+    padding-right: 20px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--whiteText);
+}
+.links {
+    grid-area: links;
+    padding-top: 175px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: right;    
+    list-style: none;
+}
+.link {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
+    color: var(--whiteText);
+    text-decoration: none;
+}
+.link:visited {text-decoration: none;}
+.link:active {text-decoration: none;}
+.link:hover {color: var(--hover);}
+
+
+
+
+.border {
+    border: 3px solid var(--borderColor);
+    box-shadow: 2px 2px 7px 2px;
+    border-radius: 40px;
+}
