@@ -1,39 +1,26 @@
-# Professional Portfoloio
-
-## Description
-
-This deployed page will serve as a foundation for my professional portfolio.  With convenient links you can access my email, phone number, resume and check me out on various social media platforms. I want to make it easy for a recruiter or potential employer to be able to do research on me. This also gives me a chance to showcase my skills to these individuals.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
+# **Who_is_James**
+## **Description**
+A never ending portfolio page of some of my work that will constantly be updated as I complete future projects. With convenient links you can access my email and check me out on various social media platforms. I want to make it easy for a recruiter or potential employer to be able to do research on me. This also gives me a chance to showcase my skills to these individuals.
+## **Table of Contents**
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**Credits**](#credits)
+- [**License**](#license)
+## **Installation**
 No steps required for installation.
+## **Usage**
+This page can be viewed at ***https://jk377y.github.io/Who_is_James/***
 
-## Usage
+![a screen shot of my deployed page hosted on Git Pages](./assets/images/WhoIsJamesScreenshot.JPG)
+## **Credits**
+**Fabien Moreno** https://www.linkedin.com/in/fabien-moreno/ for collaboration and ideas during the creation of this project.
 
-This page can be viewed at https://jk377y.github.io/Challenge-02/
+**W3C** https://validator.w3.org/ for use of the markup validation service.
 
-![a screen shot of my deployed page hosted on Git Pages](./Develop/assets/images/challenge2-deployed.PNG)
+**Unsplash** https://unsplash.com/ for use of several images viewable on this project.
 
-## Credits
-
-Fabien Moreno https://www.linkedin.com/in/fabien-moreno/ for collaboration and ideas during the creation of this project.
-
-W3C https://validator.w3.org/ for use of the markup validation service.
-
-Unsplash https://unsplash.com/ for use of several images viewable on this project.
-
-Mozilla MDN Web Docs https://developer.mozilla.org/en-US/ for use of documenation for technical reference.
-
-
-## License
-
+**Mozilla MDN Web Docs** https://developer.mozilla.org/en-US/ for use of documenation for technical reference.
+## **License**
 MIT License
 
 Copyright (c) 2022 James Kelly
